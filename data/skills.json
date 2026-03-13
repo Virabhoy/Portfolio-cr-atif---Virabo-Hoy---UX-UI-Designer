@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "titleFr": "UX Design",
+      "titleEn": "UX Design",
+      "icon": "Lightbulb",
+      "skills": ["Research utilisateur", "Wireframing", "Prototypage", "Tests utilisateurs", "Design Thinking"]
+    },
+    {
+      "id": "2",
+      "titleFr": "UI Design",
+      "titleEn": "UI Design",
+      "icon": "Palette",
+      "skills": ["Figma", "Design Systems", "Motion Design", "Responsive Design", "Accessibilité"]
+    },
+    {
+      "id": "3",
+      "titleFr": "IA & Automation",
+      "titleEn": "AI & Automation",
+      "icon": "Sparkles",
+      "skills": ["Claude AI", "ChatGPT", "Midjourney", "Automatisation", "Prompt Engineering"]
+    },
+    {
+      "id": "4",
+      "titleFr": "Gestion de Projet",
+      "titleEn": "Project Management",
+      "icon": "Users",
+      "skills": ["Agile / Scrum", "Design Thinking", "Gestion d'équipe", "Planning", "Reporting"]
+    },
+    {
+      "id": "5",
+      "titleFr": "Outils",
+      "titleEn": "Tools",
+      "icon": "Wrench",
+      "skills": ["Figma", "Adobe Suite", "WordPress", "Webflow", "Notion"]
+    }
+  ]
+}

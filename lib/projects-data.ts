@@ -1,0 +1,388 @@
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  caption?: {
+    fr: string;
+    en: string;
+  };
+}
+
+export interface Project {
+  slug: string;
+  title: {
+    fr: string;
+    en: string;
+  };
+  client: {
+    fr: string;
+    en: string;
+  };
+  description: {
+    fr: string;
+    en: string;
+  };
+  longDescription: {
+    fr: string;
+    en: string;
+  };
+  role: {
+    fr: string;
+    en: string;
+  };
+  duration: {
+    fr: string;
+    en: string;
+  };
+  year: string;
+  tags: string[];
+  heroImage: string;
+  images: ProjectImage[];
+  link?: string;
+  color: string;
+}
+
+export const projects: Project[] = [
+  {
+    slug: "mercure",
+    title: {
+      fr: "Mercure Bucket List",
+      en: "Mercure Bucket List",
+    },
+    client: {
+      fr: "Accor",
+      en: "Accor",
+    },
+    description: {
+      fr: "Interface claire et mobile-first présentant 50 expériences gastronomiques mondiales avec carte interactive.",
+      en: "Clean, mobile-first interface showcasing 50 global culinary experiences with an interactive map.",
+    },
+    longDescription: {
+      fr: "Pour célébrer les 50 ans de Mercure, j'ai conçu une interface claire et mobile-first permettant de présenter simplement leurs 50 expériences locales. L'objectif était de faciliter la découverte : j'ai structuré la navigation, créé une carte interactive et défini un design system cohérent avec la charte Accor. Le site a été livré en 3 mois, respectant les délais fixés par Accor pour la campagne internationale.",
+      en: "To celebrate Mercure's 50th anniversary, I designed a clean, mobile-first interface to simply present their 50 local experiences. The goal was to facilitate discovery: I structured the navigation, created an interactive map and defined a design system consistent with Accor's guidelines. The site was delivered in 3 months, meeting Accor's deadlines for the international campaign.",
+    },
+    role: {
+      fr: "UX/UI Designer & Chef de projet digital",
+      en: "UX/UI Designer & Digital Project Manager",
+    },
+    duration: {
+      fr: "3 mois",
+      en: "3 months",
+    },
+    year: "2023-2024",
+    tags: ["UX/UI", "Web Design", "WordPress", "Design System"],
+    heroImage: "/images/projects/mercure/hero.png",
+    images: [
+      {
+        src: "/images/projects/mercure/hero.png",
+        alt: "Mercure Hero Banner",
+        caption: {
+          fr: "Hero banner immersif avec les destinations",
+          en: "Immersive hero banner with destinations",
+        },
+      },
+      {
+        src: "/images/projects/mercure/desktop.png",
+        alt: "Mercure Desktop View",
+        caption: {
+          fr: "Vue desktop de la landing page",
+          en: "Desktop view of the landing page",
+        },
+      },
+      {
+        src: "/images/projects/mercure/map.png",
+        alt: "Interactive Map",
+        caption: {
+          fr: "Carte interactive mondiale",
+          en: "Interactive world map",
+        },
+      },
+      {
+        src: "/images/projects/mercure/mobile.png",
+        alt: "Mobile Version",
+        caption: {
+          fr: "Version mobile responsive",
+          en: "Responsive mobile version",
+        },
+      },
+      {
+        src: "/images/projects/mercure/tablet.png",
+        alt: "Tablet View",
+        caption: {
+          fr: "Vue tablette",
+          en: "Tablet view",
+        },
+      },
+    ],
+    link: "https://mercurebucketlist.com/",
+    color: "from-blue-600 to-blue-800",
+  },
+  {
+    slug: "novotel",
+    title: {
+      fr: "Novotel x Pixar",
+      en: "Novotel x Pixar",
+    },
+    client: {
+      fr: "Disney Pixar / Accor",
+      en: "Disney Pixar / Accor",
+    },
+    description: {
+      fr: "Landing page immersive inspirée de l'univers Lightyear pour valoriser les offres familiales.",
+      en: "Immersive landing page inspired by the Lightyear universe to showcase family offerings.",
+    },
+    longDescription: {
+      fr: "Dans le cadre du partenariat entre Novotel et Disney Pixar pour la sortie du film Lightyear, j'ai conçu une landing page immersive. Le site devait retranscrire l'univers visuel de Pixar tout en restant fidèle à la charte graphique de Novotel. L'enjeu était double : séduire les familles avec une interface ludique et engageante, et renforcer l'image d'un hôtel family friendly. La campagne a généré +40% d'engagement.",
+      en: "As part of the partnership between Novotel and Disney Pixar for the release of the Lightyear movie, I designed an immersive landing page. The site had to convey Pixar's visual universe while remaining faithful to Novotel's brand guidelines. The challenge was twofold: attract families with a fun and engaging interface, and reinforce the family-friendly hotel image. The campaign generated +40% engagement.",
+    },
+    role: {
+      fr: "Chef de Projet UX/UI",
+      en: "UX/UI Project Manager",
+    },
+    duration: {
+      fr: "6 mois",
+      en: "6 months",
+    },
+    year: "2022",
+    tags: ["UX/UI", "Motion", "Branding", "Disney"],
+    heroImage: "/images/projects/novotel/hero.png",
+    images: [
+      {
+        src: "/images/projects/novotel/hero.png",
+        alt: "Novotel x Pixar Hero",
+        caption: {
+          fr: "MacBook avec la landing page Lightyear",
+          en: "MacBook with the Lightyear landing page",
+        },
+      },
+      {
+        src: "/images/projects/novotel/desktop.png",
+        alt: "Desktop Version",
+        caption: {
+          fr: "Vue desktop complète",
+          en: "Full desktop view",
+        },
+      },
+      {
+        src: "/images/projects/novotel/screens.png",
+        alt: "Multiple Screens",
+        caption: {
+          fr: "Différentes sections du site",
+          en: "Different sections of the site",
+        },
+      },
+      {
+        src: "/images/projects/novotel/mobile.png",
+        alt: "Mobile Version",
+        caption: {
+          fr: "Version mobile responsive",
+          en: "Responsive mobile version",
+        },
+      },
+    ],
+    link: "https://press.accor.com/novotel-prepares-for-take-off-with-disney-and-pixar-lightyear",
+    color: "from-purple-600 to-indigo-800",
+  },
+  {
+    slug: "leave",
+    title: {
+      fr: "Leave",
+      en: "Leave",
+    },
+    client: {
+      fr: "Startup",
+      en: "Startup",
+    },
+    description: {
+      fr: "Interface simple et rassurante pour enregistrer et transmettre des messages en toute sécurité.",
+      en: "Simple and reassuring interface for recording and transmitting messages securely.",
+    },
+    longDescription: {
+      fr: "Pour Leave, j'ai conçu une interface simple et rassurante permettant aux utilisateurs d'enregistrer et transmettre leurs messages en toute sécurité. L'objectif était de rendre un sujet sensible accessible : j'ai structuré le parcours, créé des maquettes claires et défini une identité douce pour accompagner l'utilisateur sans le brusquer. Le design met l'accent sur la confiance et la sérénité.",
+      en: "For Leave, I designed a simple and reassuring interface allowing users to record and transmit their messages securely. The goal was to make a sensitive subject accessible: I structured the user journey, created clear mockups and defined a soft identity to accompany users without rushing them. The design emphasizes trust and serenity.",
+    },
+    role: {
+      fr: "UX/UI Designer",
+      en: "UX/UI Designer",
+    },
+    duration: {
+      fr: "4 mois",
+      en: "4 months",
+    },
+    year: "2023",
+    tags: ["UX/UI", "Product Design", "Branding", "Mobile"],
+    heroImage: "/images/projects/leave/hero.png",
+    images: [
+      {
+        src: "/images/projects/leave/hero.png",
+        alt: "Leave Hero",
+        caption: {
+          fr: "Présentation du concept Leave",
+          en: "Leave concept presentation",
+        },
+      },
+      {
+        src: "/images/projects/leave/landing.png",
+        alt: "Landing Page",
+        caption: {
+          fr: "Landing page version conventionnelle",
+          en: "Conventional landing page version",
+        },
+      },
+      {
+        src: "/images/projects/leave/mobile.png",
+        alt: "Mobile App",
+        caption: {
+          fr: "Application mobile",
+          en: "Mobile application",
+        },
+      },
+      {
+        src: "/images/projects/leave/section1.png",
+        alt: "Section Pourquoi Leave",
+        caption: {
+          fr: "Section 'Pourquoi Leave'",
+          en: "'Why Leave' section",
+        },
+      },
+      {
+        src: "/images/projects/leave/section2.png",
+        alt: "Section Sécurité",
+        caption: {
+          fr: "Section garantie de sécurité",
+          en: "Security guarantee section",
+        },
+      },
+      {
+        src: "/images/projects/leave/ui.png",
+        alt: "User Interface",
+        caption: {
+          fr: "Interface d'ajout de message",
+          en: "Add message interface",
+        },
+      },
+    ],
+    color: "from-amber-500 to-orange-600",
+  },
+  {
+    slug: "driiink",
+    title: {
+      fr: "Driiink",
+      en: "Driiink",
+    },
+    client: {
+      fr: "Application Mobile",
+      en: "Mobile App",
+    },
+    description: {
+      fr: "Application mobile-first permettant aux clients de commander leurs boissons sans attendre.",
+      en: "Mobile-first app allowing customers to order drinks without waiting.",
+    },
+    longDescription: {
+      fr: "Pour Driiink, j'ai conçu une application simple et rapide permettant aux clients de commander leurs boissons sans attendre au comptoir. L'objectif était d'améliorer le service en bar : j'ai structuré le parcours, réalisé les wireframes et créé une interface mobile-first pour faciliter la commande et le paiement en quelques gestes. L'expérience utilisateur a été optimisée pour une utilisation rapide en environnement festif.",
+      en: "For Driiink, I designed a simple and fast app allowing customers to order their drinks without waiting at the counter. The goal was to improve bar service: I structured the user journey, created wireframes and designed a mobile-first interface to facilitate ordering and payment in a few gestures. The user experience was optimized for quick use in a festive environment.",
+    },
+    role: {
+      fr: "UX/UI Designer",
+      en: "UX/UI Designer",
+    },
+    duration: {
+      fr: "3 mois",
+      en: "3 months",
+    },
+    year: "2023",
+    tags: ["Mobile App", "UX/UI", "Product", "Fintech"],
+    heroImage: "/images/projects/driiink/hero.png",
+    images: [
+      {
+        src: "/images/projects/driiink/hero.png",
+        alt: "Driiink Hero",
+        caption: {
+          fr: "Présentation de l'application Driiink",
+          en: "Driiink app presentation",
+        },
+      },
+      {
+        src: "/images/projects/driiink/mobile.png",
+        alt: "Mobile App",
+        caption: {
+          fr: "Application mobile iPhone",
+          en: "iPhone mobile app",
+        },
+      },
+      {
+        src: "/images/projects/driiink/screens.png",
+        alt: "App Screens",
+        caption: {
+          fr: "Différents écrans de l'application",
+          en: "Different app screens",
+        },
+      },
+      {
+        src: "/images/projects/driiink/app.png",
+        alt: "App Interface",
+        caption: {
+          fr: "Interface de commande",
+          en: "Ordering interface",
+        },
+      },
+      {
+        src: "/images/projects/driiink/detail.png",
+        alt: "Product Detail",
+        caption: {
+          fr: "Détail produit",
+          en: "Product detail",
+        },
+      },
+    ],
+    color: "from-emerald-600 to-teal-700",
+  },
+  {
+    slug: "situal",
+    title: {
+      fr: "Situal",
+      en: "Situal",
+    },
+    client: {
+      fr: "Agence Web",
+      en: "Web Agency",
+    },
+    description: {
+      fr: "Identité claire et site simple pour comprendre rapidement les offres et demander un devis.",
+      en: "Clear identity and simple website to quickly understand offers and request quotes.",
+    },
+    longDescription: {
+      fr: "Pour Situal, j'ai conçu une identité claire et un site simple permettant aux clients de comprendre rapidement les offres et de demander un devis sans friction. L'objectif était d'être accessible et direct : j'ai structuré le contenu, défini l'interface et créé une expérience fluide pour présenter les services et faciliter la prise de contact. Le site met en avant les formules de prix de manière transparente.",
+      en: "For Situal, I designed a clear identity and simple website allowing customers to quickly understand offers and request quotes without friction. The goal was to be accessible and direct: I structured the content, defined the interface and created a smooth experience to present services and facilitate contact. The site highlights pricing packages transparently.",
+    },
+    role: {
+      fr: "UX/UI Designer & Branding",
+      en: "UX/UI Designer & Branding",
+    },
+    duration: {
+      fr: "2 mois",
+      en: "2 months",
+    },
+    year: "2024",
+    tags: ["Web Design", "Branding", "WordPress", "Identity"],
+    heroImage: "/images/projects/situal/hero.png",
+    images: [
+      {
+        src: "/images/projects/situal/hero.png",
+        alt: "Situal Hero",
+        caption: {
+          fr: "Présentation du site Situal",
+          en: "Situal website presentation",
+        },
+      },
+    ],
+    color: "from-cyan-500 to-blue-600",
+  },
+];
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find((p) => p.slug === slug);
+}
+
+export function getAllProjectSlugs(): string[] {
+  return projects.map((p) => p.slug);
+}

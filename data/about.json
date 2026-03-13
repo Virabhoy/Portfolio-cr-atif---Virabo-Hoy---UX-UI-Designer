@@ -1,0 +1,34 @@
+{
+  "profileImage": "/images/profile.jpg",
+  "name": "Virabo Hoy",
+  "title": {
+    "fr": "Product Builder Digital & UX/UI Designer",
+    "en": "Digital Product Builder & UX/UI Designer"
+  },
+  "intro": {
+    "fr": "Je conçois des interfaces qui ne cherchent pas à impressionner, mais à être vraiment efficaces.",
+    "en": "I design interfaces that don't try to impress, but to be truly effective."
+  },
+  "bio": {
+    "fr": "Je m'appelle Virabo, je suis Product Builder Digital & UX/UI Designer basé à Paris. Je conçois des expériences digitales intuitives et performantes, adaptées aux besoins réels des utilisateurs.",
+    "en": "My name is Virabo, I'm a Digital Product Builder & UX/UI Designer based in Paris. I design intuitive and high-performing digital experiences, tailored to users' real needs."
+  },
+  "bio2": {
+    "fr": "Mon approche combine créativité, stratégie et technologie pour créer des produits qui font la différence.",
+    "en": "My approach combines creativity, strategy and technology to create products that make a difference."
+  },
+  "stats": [
+    { "value": "35+", "labelFr": "Clients", "labelEn": "Clients" },
+    { "value": "5+", "labelFr": "Années d'expérience", "labelEn": "Years of experience" },
+    { "value": "20+", "labelFr": "Projets livrés", "labelEn": "Projects delivered" }
+  ],
+  "location": {
+    "city": "Paris",
+    "region": "Île-de-France"
+  },
+  "socialLinks": [
+    { "platform": "LinkedIn", "url": "https://linkedin.com/in/virabo-hoy/" },
+    { "platform": "Instagram", "url": "https://www.instagram.com/viracrea/" },
+    { "platform": "Email", "url": "mailto:Virabhoy@gmail.com" }
+  ]
+}
