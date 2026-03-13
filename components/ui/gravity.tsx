@@ -192,11 +192,11 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
   ) => {
     const canvas = useRef<HTMLDivElement>(null);
     const engine = useRef(Engine.create());
-    const render = useRef<Render>();
-    const runner = useRef<Runner>();
+    const render = useRef<Render | null>(null);
+    const runner = useRef<Runner | null>(null);
     const bodiesMap = useRef(new Map<string, PhysicsBody>());
-    const frameId = useRef<number>();
-    const mouseConstraint = useRef<Matter.MouseConstraint>();
+    const frameId = useRef<number | null>(null);
+    const mouseConstraint = useRef<Matter.MouseConstraint | null>(null);
     const mouseDown = useRef(false);
     const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
 
@@ -215,10 +215,12 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
         const y = calculatePosition(props.y, canvasRect.height, height);
 
         let body;
+        const { chamfer: _, ...bodyOptions } = props.matterBodyOptions || {};
+
         if (props.bodyType === "circle") {
           const radius = Math.max(width, height) / 2;
           body = Bodies.circle(x, y, radius, {
-            ...props.matterBodyOptions,
+            ...bodyOptions,
             angle: angle,
             render: {
               fillStyle: debug ? "#888888" : "#00000000",
@@ -237,7 +239,7 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
           });
 
           body = Bodies.fromVertices(x, y, vertexSets, {
-            ...props.matterBodyOptions,
+            ...bodyOptions,
             angle: angle,
             render: {
               fillStyle: debug ? "#888888" : "#00000000",
@@ -247,7 +249,7 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
           });
         } else {
           body = Bodies.rectangle(x, y, width, height, {
-            ...props.matterBodyOptions,
+            ...bodyOptions,
             angle: angle,
             render: {
               fillStyle: debug ? "#888888" : "#00000000",
