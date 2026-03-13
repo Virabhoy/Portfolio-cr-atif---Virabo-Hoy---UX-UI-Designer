@@ -1,11 +1,13 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getData } from "@/lib/blob-storage";
 
 export async function GET() {
   try {
-    const dataFilePath = path.join(process.cwd(), "data", "projects.json");
-    const data = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
+    const data = await getData("projects.json");
+
+    if (!data) {
+      return NextResponse.json({ projects: [] });
+    }
 
     // Only return visible projects
     const visibleProjects = data.projects.filter((p: any) => p.visible !== false);

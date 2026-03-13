@@ -1,29 +1,30 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getData, saveData } from "@/lib/blob-storage";
 
-const dataFilePath = path.join(process.cwd(), "data", "projects.json");
+const DATA_FILE = "projects.json";
+
+const defaultData = { projects: [] };
 
 export async function GET() {
   try {
-    const data = fs.readFileSync(dataFilePath, "utf-8");
-    return NextResponse.json(JSON.parse(data));
+    const data = await getData(DATA_FILE);
+    return NextResponse.json(data || defaultData);
   } catch (error) {
-    return NextResponse.json({ error: "Failed to read data" }, { status: 500 });
+    return NextResponse.json(defaultData);
   }
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const currentData = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
+    const currentData = await getData(DATA_FILE) || defaultData;
 
     // Generate new ID
-    const newId = String(Math.max(...currentData.projects.map((p: any) => parseInt(p.id)), 0) + 1);
+    const newId = String(Math.max(...currentData.projects.map((p: any) => parseInt(p.id) || 0), 0) + 1);
     const newProject = { ...body, id: newId };
 
     currentData.projects.push(newProject);
-    fs.writeFileSync(dataFilePath, JSON.stringify(currentData, null, 2));
+    await saveData(DATA_FILE, currentData);
 
     return NextResponse.json({ success: true, project: newProject });
   } catch (error) {
@@ -34,7 +35,7 @@ export async function POST(request: NextRequest) {
 export async function PUT(request: NextRequest) {
   try {
     const body = await request.json();
-    const currentData = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
+    const currentData = await getData(DATA_FILE) || defaultData;
 
     const index = currentData.projects.findIndex((p: any) => p.id === body.id);
     if (index === -1) {
@@ -42,7 +43,7 @@ export async function PUT(request: NextRequest) {
     }
 
     currentData.projects[index] = body;
-    fs.writeFileSync(dataFilePath, JSON.stringify(currentData, null, 2));
+    await saveData(DATA_FILE, currentData);
 
     return NextResponse.json({ success: true });
   } catch (error) {
@@ -59,9 +60,9 @@ export async function DELETE(request: NextRequest) {
       return NextResponse.json({ error: "ID required" }, { status: 400 });
     }
 
-    const currentData = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
+    const currentData = await getData(DATA_FILE) || defaultData;
     currentData.projects = currentData.projects.filter((p: any) => p.id !== id);
-    fs.writeFileSync(dataFilePath, JSON.stringify(currentData, null, 2));
+    await saveData(DATA_FILE, currentData);
 
     return NextResponse.json({ success: true });
   } catch (error) {

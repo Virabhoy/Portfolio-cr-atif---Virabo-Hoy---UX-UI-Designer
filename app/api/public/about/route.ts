@@ -1,12 +1,10 @@
 import { NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getData } from "@/lib/blob-storage";
 
 export async function GET() {
   try {
-    const dataFilePath = path.join(process.cwd(), "data", "about.json");
-    const data = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
-    return NextResponse.json(data);
+    const data = await getData("about.json");
+    return NextResponse.json(data || {});
   } catch (error) {
     return NextResponse.json({});
   }

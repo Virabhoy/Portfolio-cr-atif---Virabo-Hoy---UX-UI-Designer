@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import fs from "fs";
-import path from "path";
+import { getData } from "@/lib/blob-storage";
 
 export async function GET(
   request: NextRequest,
@@ -8,8 +7,11 @@ export async function GET(
 ) {
   try {
     const { slug } = await params;
-    const dataFilePath = path.join(process.cwd(), "data", "projects.json");
-    const data = JSON.parse(fs.readFileSync(dataFilePath, "utf-8"));
+    const data = await getData("projects.json");
+
+    if (!data) {
+      return NextResponse.json({ error: "Project not found" }, { status: 404 });
+    }
 
     const project = data.projects.find((p: any) => p.slug === slug);
 
