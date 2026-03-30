@@ -105,6 +105,24 @@ const translations = {
     // Footer
     "footer.rights": "Tous droits réservés",
     "footer.made": "Conçu avec",
+
+    // Courses
+    "nav.courses": "Cours UX",
+    "course.backToCourses": "Retour aux cours",
+    "course.tableOfContents": "Sommaire",
+    "course.sources": "Sources & Références",
+    "course.nextChapter": "Chapitre suivant",
+    "course.readingTime": "min de lecture",
+    "course.chapter": "Chapitre",
+    "course.comingSoon": "Bientôt disponible",
+    "course.listing.title": "Cours UX",
+    "course.listing.subtitle": "Apprendre les principes scientifiques du design d'interface",
+    "course.listing.description": "Des cours approfondis sur les lois fondamentales de l'UX, basés sur la recherche scientifique et illustrés par des exemples concrets.",
+
+    // Cours UX homepage section
+    "coursux.section.title": "Cours UX",
+    "coursux.section.subtitle": "Des cours approfondis sur les grandes lois de l'UX, basés sur la recherche scientifique.",
+    "coursux.section.cta": "Voir tous les cours",
   },
   en: {
     // Navigation
@@ -200,6 +218,24 @@ const translations = {
     // Footer
     "footer.rights": "All rights reserved",
     "footer.made": "Designed with",
+
+    // Courses
+    "nav.courses": "UX Courses",
+    "course.backToCourses": "Back to courses",
+    "course.tableOfContents": "Table of Contents",
+    "course.sources": "Sources & References",
+    "course.nextChapter": "Next chapter",
+    "course.readingTime": "min read",
+    "course.chapter": "Chapter",
+    "course.comingSoon": "Coming soon",
+    "course.listing.title": "UX Courses",
+    "course.listing.subtitle": "Learn the scientific principles of interface design",
+    "course.listing.description": "In-depth courses on the fundamental laws of UX, based on scientific research and illustrated with concrete examples.",
+
+    // Cours UX homepage section
+    "coursux.section.title": "UX Courses",
+    "coursux.section.subtitle": "In-depth courses on the fundamental laws of UX, grounded in scientific research.",
+    "coursux.section.cta": "See all courses",
   },
 };
 

@@ -26,16 +26,11 @@ export async function saveData(filename: string, data: any): Promise<boolean> {
     const jsonString = JSON.stringify(data, null, 2);
     const blob = new Blob([jsonString], { type: 'application/json' });
 
-    // Delete old file first
-    const { blobs } = await list({ prefix: DATA_PREFIX + filename });
-    for (const oldBlob of blobs) {
-      await del(oldBlob.url);
-    }
-
-    // Upload new file
+    // Simply overwrite the file - no need to delete since we use allowOverwrite
     await put(DATA_PREFIX + filename, blob, {
       access: 'public',
       addRandomSuffix: false,
+      allowOverwrite: true,
     });
 
     return true;

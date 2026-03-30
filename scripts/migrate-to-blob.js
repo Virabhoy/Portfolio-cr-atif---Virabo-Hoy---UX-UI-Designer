@@ -24,6 +24,7 @@ async function migrate() {
         const { url } = await put(`data/${filename}`, blob, {
           access: 'public',
           addRandomSuffix: false,
+          allowOverwrite: true,
         });
 
         console.log(`✅ ${filename} -> ${url}`);

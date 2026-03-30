@@ -22,6 +22,7 @@
   --color-muted-foreground: #888888;
   --color-border: #E5E5E5;
   --font-family-bricolage: var(--font-bricolage), sans-serif;
+  --font-family-montserrat: var(--font-montserrat), sans-serif;
 }
 
 html {
@@ -103,4 +104,56 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+
+/* ===================== Mercure Bucket List ===================== */
+
+/* Font utilities for Mercure */
+.font-spectral {
+  font-family: var(--font-spectral), Georgia, serif;
+}
+
+/* Arc Gallery Hero animations */
+@keyframes arc-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 50%);
+  }
+}
+
+@keyframes arc-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-arc-fade-in-up {
+  animation: arc-fade-in-up 0.8s ease-out;
+}
+
+.animate-arc-fade-in {
+  animation: arc-fade-in 0.8s ease-out;
+}
+
+/* Mercure Marquee */
+@keyframes mercure-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-mercure-marquee {
+  animation: mercure-marquee 25s linear infinite;
 }

@@ -1,0 +1,325 @@
+import { MercureExperience, MapLocation, Testimonial } from "./mercure-types";
+
+export const experiences: MercureExperience[] = [
+  {
+    id: 1,
+    slug: "grilled-meat-iguazu",
+    title: "Taste Authentic Argentinian Grilled Meat in Iguazu",
+    excerpt:
+      "Discover the art of asado with a local grill master near the majestic Iguazu Falls. A smoky, unforgettable culinary journey.",
+    category: "Gastronomy",
+    city: "Iguazu",
+    country: "Argentina",
+    hotel: "Mercure Iguazu Hotel Iru",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/01-iguazu.webp",
+    author: "Mercure Team",
+    date: "Oct 15, 2023",
+    mapPosition: { top: "72%", left: "32%" },
+    featured: true,
+    detail: {
+      intro:
+        "In the misty embrace of Iguazu Falls, where thundering water meets lush jungle, an ancient culinary tradition awaits. Here, the asado is more than a meal — it is a ritual passed down through generations of Argentinian grill masters.",
+      sections: [
+        {
+          title: "The Art of Asado",
+          text: "Your journey begins at a family-run parrilla nestled on the banks of the Iguazu River. Don Raúl, a third-generation asador, hand-selects cuts of grass-fed beef from local estancias each morning. As embers glow beneath the iron grill, he shares the philosophy behind every cut — the slow dance between fire and meat that defines Argentinian gastronomy.",
+          icon: "fire",
+        },
+        {
+          title: "A Feast for the Senses",
+          text: "The tasting unfolds over three hours: tender entraña marinated in chimichurri, crispy mollejas with a squeeze of lemon, and the legendary vacío cooked low and slow until the fat renders into pure silk. Each course is paired with a Malbec from Mendoza, its dark fruit notes echoing the smokiness of the grill.",
+          icon: "beef",
+        },
+        {
+          title: "Nature's Grand Theater",
+          text: "As the sun sets, the roar of the falls provides a dramatic soundtrack. After the meal, a short walk through the subtropical forest leads to a private viewpoint where mist from the cascades kisses your skin. It is the perfect ending to a day where nature and tradition intertwine.",
+          icon: "leaf",
+        },
+      ],
+      highlights: [
+        "3-hour guided asado experience",
+        "5 premium cuts of grass-fed beef",
+        "Malbec wine pairing included",
+        "Private sunset viewpoint at the falls",
+        "Recipe card & chimichurri jar to take home",
+      ],
+      tip: "Book the Saturday session for live folk guitar accompaniment by local musicians.",
+    },
+  },
+  {
+    id: 2,
+    slug: "oyster-tasting-kangaroo-island",
+    title: "Fresh Oyster Tasting on Kangaroo Island",
+    excerpt:
+      "Savour the freshest oysters straight from pristine South Australian waters, paired with local wines on a sun-drenched shore.",
+    category: "Gastronomy",
+    city: "Kangaroo Island",
+    country: "Australia",
+    hotel: "Mercure Kangaroo Island Lodge",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/02-kangaroo.webp",
+    author: "Mercure Team",
+    date: "Nov 2, 2023",
+    mapPosition: { top: "78%", left: "82%" },
+    featured: true,
+    detail: {
+      intro:
+        "Where the Southern Ocean meets pristine white sand, Kangaroo Island hides one of Australia's best-kept secrets: oysters so fresh they still taste of the sea breeze. This is not just a tasting — it is a pilgrimage to the source.",
+      sections: [
+        {
+          title: "From Ocean to Plate",
+          text: "At dawn, you join fisherman Jack on his weathered boat as he navigates the crystal-clear shallows of American River. With practiced hands, he pulls wire cages from the seabed, revealing clusters of Pacific oysters nurtured by the island's uniquely mineral-rich waters. You learn to shuck your first oyster right there on the boat, the briny sweetness flooding your palate.",
+          icon: "shell",
+        },
+        {
+          title: "The Shore Tasting",
+          text: "Back on a secluded beach, a long wooden table awaits under a canopy of eucalyptus. Three dozen oysters are presented alongside finger limes, native pepperberry mignonette, and a chilled bottle of Adelaide Hills Riesling. A local marine biologist explains the ecosystem that makes these oysters uniquely complex — the cold currents, the pristine waters, the patience of cultivation.",
+          icon: "wine",
+        },
+        {
+          title: "Sunset & Sea Lions",
+          text: "As the afternoon light turns golden, a short coastal walk leads to Seal Bay. Here, a colony of Australian sea lions basks on the sand, indifferent to your presence. Watching these graceful creatures against the amber sky, with the taste of the ocean still on your lips, you understand why locals call this island a world apart.",
+          icon: "sunset",
+        },
+      ],
+      highlights: [
+        "Morning boat trip with a local fisherman",
+        "Learn to shuck oysters on the water",
+        "36 freshly harvested Pacific oysters",
+        "Native Australian condiment pairing",
+        "Guided walk to Seal Bay sea lion colony",
+      ],
+      tip: "Visit between September and November when oysters are at their plumpest and whales pass by the coast.",
+    },
+  },
+  {
+    id: 3,
+    slug: "wine-estate-yarra-valley",
+    title: "Explore a Wine Estate in Yarra Valley",
+    excerpt:
+      "Stroll through rolling vineyards, taste award-winning Pinot Noir, and learn winemaking secrets in Melbourne's backyard.",
+    category: "Wine & Spirits",
+    city: "Yarra Valley",
+    country: "Australia",
+    hotel: "Mercure Yarra Valley",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/03-yarra.webp",
+    author: "Mercure Team",
+    date: "Nov 10, 2023",
+    mapPosition: { top: "76%", left: "85%" },
+    detail: {
+      intro:
+        "Just an hour from Melbourne, the Yarra Valley unfolds like a green velvet quilt draped over gentle hills. This is Australia's oldest wine region, where cool-climate Pinot Noir and Chardonnay have earned a place among the world's finest. Your visit goes far beyond the tasting room.",
+      sections: [
+        {
+          title: "Walking the Vines",
+          text: "The morning begins with a vineyard walk alongside winemaker Sophie Chen, whose family planted these vines four decades ago. She explains how the valley's unique microclimate — morning fog, afternoon sun, cool nights — creates grapes of extraordinary concentration. You taste a Chardonnay berry straight from the vine, its acidity sharp and promising.",
+          icon: "grape",
+        },
+        {
+          title: "The Cellar Door Experience",
+          text: "Inside a stone cellar that smells of French oak and earth, Sophie guides you through a vertical tasting: five vintages of estate Pinot Noir spanning a decade. You discover how each year tells a different story — drought, rain, early frost — and how the winemaker's hand shapes nature into art. The 2019 vintage, with its silky tannins and wild cherry notes, is the unanimous favourite.",
+          icon: "wine",
+        },
+        {
+          title: "Farm-to-Table Lunch",
+          text: "Lunch is served in a glass pavilion overlooking the valley. The chef works exclusively with ingredients sourced within thirty kilometres: duck from a nearby farm, vegetables from the kitchen garden, cheese from a neighbouring dairy. Each dish is designed to complement the wines, creating pairings that feel both effortless and revelatory.",
+          icon: "utensils",
+        },
+      ],
+      highlights: [
+        "Private vineyard walk with the winemaker",
+        "Vertical tasting of 5 Pinot Noir vintages",
+        "Farm-to-table lunch with wine pairing",
+        "Behind-the-scenes barrel room access",
+        "Bottle of estate wine to take home",
+      ],
+      tip: "Autumn (March–May) offers the most dramatic colours as the vine leaves turn gold and crimson.",
+    },
+  },
+  {
+    id: 4,
+    slug: "family-brewery-sydney",
+    title: "Visit a Family-Run Craft Brewery in Sydney",
+    excerpt:
+      "Go behind the scenes of a beloved family brewery, taste small-batch ales, and discover the stories behind every pint.",
+    category: "Wine & Spirits",
+    city: "Sydney",
+    country: "Australia",
+    hotel: "Mercure Sydney",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/04-sydney.webp",
+    author: "Mercure Team",
+    date: "Nov 18, 2023",
+    featured: true,
+  },
+  {
+    id: 5,
+    slug: "brazilian-cuisine-belo-horizonte",
+    title: "Dive Into Brazilian Street Cuisine in Belo Horizonte",
+    excerpt:
+      "From pão de queijo to feijoada, explore the vibrant flavors of Minas Gerais with a local food guide.",
+    category: "Gastronomy",
+    city: "Belo Horizonte",
+    country: "Brazil",
+    hotel: "Mercure Belo Horizonte Lourdes",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/05-belo.webp",
+    author: "Mercure Team",
+    date: "Dec 1, 2023",
+    mapPosition: { top: "65%", left: "35%" },
+  },
+  {
+    id: 6,
+    slug: "local-brewer-french-alps",
+    title: "Meet a Local Brewer in the French Alps",
+    excerpt:
+      "High in the mountains, a passionate brewer crafts unique beers with glacier water. Taste the altitude in every sip.",
+    category: "Wine & Spirits",
+    city: "French Alps",
+    country: "France",
+    hotel: "Mercure Chamonix Centre",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/06-alps.webp",
+    author: "Mercure Team",
+    date: "Dec 8, 2023",
+    mapPosition: { top: "32%", left: "50%" },
+  },
+  {
+    id: 7,
+    slug: "french-aperitif-avignon",
+    title: "Enjoy a Traditional French Apéritif in Avignon",
+    excerpt:
+      "Sip pastis on a sun-dappled terrace, nibble on tapenade, and absorb the magic of Provence at golden hour.",
+    category: "Cultural Experience",
+    city: "Avignon",
+    country: "France",
+    hotel: "Mercure Pont d'Avignon Centre",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/07-avignon.webp",
+    author: "Mercure Team",
+    date: "Dec 15, 2023",
+    mapPosition: { top: "35%", left: "49%" },
+    featured: true,
+  },
+  {
+    id: 8,
+    slug: "chateauneuf-du-pape-vineyard",
+    title: "Tour a Châteauneuf-du-Pape Vineyard",
+    excerpt:
+      "Walk among ancient vines, learn the terroir secrets, and taste legendary wines where popes once celebrated.",
+    category: "Wine & Spirits",
+    city: "Avignon",
+    country: "France",
+    hotel: "Mercure Pont d'Avignon Centre",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/08-chateauneuf.webp",
+    author: "Mercure Team",
+    date: "Jan 5, 2024",
+  },
+  {
+    id: 9,
+    slug: "wine-tasting-dark-bordeaux",
+    title: "Wine Tasting in the Dark in Bordeaux",
+    excerpt:
+      "Blindfolded in a candlelit cellar, let your senses discover Bordeaux grands crus in an unforgettable sensory experience.",
+    category: "Wine & Spirits",
+    city: "Bordeaux",
+    country: "France",
+    hotel: "Mercure Bordeaux Centre",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/09-bordeaux.webp",
+    author: "Mercure Team",
+    date: "Jan 12, 2024",
+    mapPosition: { top: "36%", left: "46%" },
+  },
+  {
+    id: 10,
+    slug: "picnic-chateau-chantilly",
+    title: "Gourmet Picnic at Château de Chantilly",
+    excerpt:
+      "Spread a blanket on the lawns of a fairy-tale château, with artisan cheeses, charcuterie, and champagne.",
+    category: "Cultural Experience",
+    city: "Chantilly",
+    country: "France",
+    hotel: "Mercure Chantilly Resort",
+    hotelUrl: "https://all.accor.com",
+    image: "/images/mercure-bucketlist/experiences/10-chantilly.webp",
+    author: "Mercure Team",
+    date: "Jan 20, 2024",
+    mapPosition: { top: "30%", left: "49%" },
+  },
+];
+
+export const mapLocations: MapLocation[] = [
+  { id: "iguazu", label: "Iguazu", top: "72%", left: "32%", experienceSlug: "grilled-meat-iguazu" },
+  { id: "kangaroo", label: "Kangaroo Island", top: "78%", left: "82%", experienceSlug: "oyster-tasting-kangaroo-island" },
+  { id: "yarra", label: "Yarra Valley", top: "76%", left: "85%", experienceSlug: "wine-estate-yarra-valley" },
+  { id: "belo", label: "Belo Horizonte", top: "65%", left: "35%", experienceSlug: "brazilian-cuisine-belo-horizonte" },
+  { id: "alps", label: "French Alps", top: "32%", left: "50%", experienceSlug: "local-brewer-french-alps" },
+  { id: "avignon", label: "Avignon", top: "35%", left: "49%", experienceSlug: "french-aperitif-avignon" },
+  { id: "bordeaux", label: "Bordeaux", top: "36%", left: "46%", experienceSlug: "wine-tasting-dark-bordeaux" },
+  { id: "chantilly", label: "Chantilly", top: "30%", left: "49%", experienceSlug: "picnic-chateau-chantilly" },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    text: "The oyster tasting on Kangaroo Island was breathtaking. Eating the freshest seafood while watching the sunset — pure magic.",
+    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    name: "Sophie Laurent",
+    role: "Travel Blogger",
+  },
+  {
+    text: "I never thought a brewery visit could be so enchanting. The Alpine craft beer tasted like pure mountain air.",
+    image: "https://randomuser.me/api/portraits/men/22.jpg",
+    name: "Marco Bianchi",
+    role: "Food Journalist",
+  },
+  {
+    text: "The wine tasting in the dark was a revelation. Without sight, every sip became poetry. A once-in-a-lifetime experience.",
+    image: "https://randomuser.me/api/portraits/women/28.jpg",
+    name: "Elena Torres",
+    role: "Sommelier",
+  },
+  {
+    text: "Mercure showed us the real Argentina. The asado near Iguazu Falls was the highlight of our entire South American trip.",
+    image: "https://randomuser.me/api/portraits/men/35.jpg",
+    name: "James Crawford",
+    role: "Adventure Traveler",
+  },
+  {
+    text: "Our picnic at Château de Chantilly felt like stepping into a painting. The champagne, the gardens — absolutely dreamy.",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Isabelle Moreau",
+    role: "Luxury Travel Editor",
+  },
+  {
+    text: "Brazilian street food in Belo Horizonte blew my mind. The pão de queijo alone was worth the flight.",
+    image: "https://randomuser.me/api/portraits/men/51.jpg",
+    name: "Rodrigo Silva",
+    role: "Chef & Food Writer",
+  },
+  {
+    text: "The apéritif in Avignon was the perfect way to experience Provençal life. Simple, beautiful, unforgettable.",
+    image: "https://randomuser.me/api/portraits/women/55.jpg",
+    name: "Camille Dupont",
+    role: "Lifestyle Photographer",
+  },
+  {
+    text: "Touring Châteauneuf-du-Pape vineyards with a local guide was incredible. The history and the wine — both world-class.",
+    image: "https://randomuser.me/api/portraits/men/62.jpg",
+    name: "Oliver Hansen",
+    role: "Wine Enthusiast",
+  },
+  {
+    text: "Every Mercure experience felt authentically local. They don't just book you a hotel — they connect you to a place.",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Ayumi Tanaka",
+    role: "Digital Nomad",
+  },
+];
+
+export const featuredExperiences = experiences.filter((e) => e.featured);
+
+export const categories = ["All", "Gastronomy", "Wine & Spirits", "Cultural Experience"] as const;

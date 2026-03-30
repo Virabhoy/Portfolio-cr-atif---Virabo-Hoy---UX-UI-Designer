@@ -368,73 +368,43 @@
       "id": "6"
     },
     {
-      "slug": "création-de-cours-ux",
+      "id": "7",
+      "slug": "oxynum",
       "title": {
-        "fr": "Cours d'UX design les fondamentaux théoriques",
-        "en": ""
+        "fr": "Oxynum — Charte Graphique 2025",
+        "en": "Oxynum — Brand Guidelines 2025"
       },
       "client": {
-        "fr": "Virabo Hoy",
-        "en": ""
+        "fr": "Oxynum",
+        "en": "Oxynum"
       },
       "description": {
-        "fr": "La Loi de Fitts explique que le temps nécessaire pour atteindre une cible dépend de sa distance (D) et de sa taille (W) : plus un élément est loin ou petit, plus il demande d’effort et de précision.\n\nEn UX, cela signifie qu’une action trop éloignée du pouce, trop petite ou mal positionnée crée une friction motrice qui ralentit l’utilisateur et augmente le risque d’erreur.\n\nC’est une loi essentielle pour concevoir des interfaces accessibles, surtout sur mobile où la zone atteignable est limitée. Placements cohérents, CTA proches, zones cliquables élargies : tout contribue à réduire l’effort physique et à améliorer la fluidité perçue.\n\nMais la Loi de Fitts doit être appliquée avec nuance :\n\nelle ne prend pas en compte la motivation, la compréhension, la posture, ni la hiérarchie visuelle. Elle optimise un geste, pas une expérience complète.\n\nLa vraie valeur est donc d’utiliser Fitts en équilibre avec la cognition, le contexte et les besoins réels de l’utilisateur.",
-        "en": ""
+        "fr": "Charte graphique complète pour une agence digitale à l'intersection de l'IA et de l'excellence créative.",
+        "en": "Comprehensive brand guidelines for a digital agency at the intersection of AI and creative excellence."
       },
       "longDescription": {
-        "fr": "La Loi de Fitts explique que **le temps nécessaire pour atteindre une cible dépend de sa distance (D) et de sa taille (W)** : plus un élément est loin ou petit, plus il demande d’effort et de précision.\n\nEn UX, cela signifie qu’une action trop éloignée du pouce, trop petite ou mal positionnée crée une **friction motrice** qui ralentit l’utilisateur et augmente le risque d’erreur.\n\nC’est une loi essentielle pour concevoir des interfaces accessibles, surtout sur mobile où la zone atteignable est limitée. Placements cohérents, CTA proches, zones cliquables élargies : tout contribue à **réduire l’effort physique** et à améliorer la fluidité perçue.\n\nMais la Loi de Fitts doit être appliquée avec nuance :\n\nelle ne prend pas en compte la motivation, la compréhension, la posture, ni la hiérarchie visuelle. Elle optimise un geste, pas une expérience complète.\n\nLa vraie valeur est donc d’utiliser Fitts **en équilibre avec la cognition, le contexte et les besoins réels de l’utilisateur**.",
-        "en": ""
+        "fr": "Pour Oxynum, j'ai conçu une charte graphique complète définissant l'identité visuelle de l'agence. Le projet couvre le manifeste de marque, la palette de couleurs, le système typographique (Cotton, Cormorant Garamond, Plus Jakarta Sans), les déclinaisons du logo avec sa mascotte lapin, une bibliothèque d'icônes complète, un kit de composants UI, les règles d'imagerie et les principes d'animation. L'ensemble traduit le positionnement d'Oxynum à la croisée de l'intelligence artificielle et de l'excellence créative.",
+        "en": "For Oxynum, I designed a comprehensive brand guidelines system defining the agency's visual identity. The project covers the brand manifesto, color palette, typographic system (Cotton, Cormorant Garamond, Plus Jakarta Sans), logo variations with its rabbit mascot, a complete icon library, a UI component kit, imagery rules and animation principles. The whole system conveys Oxynum's positioning at the intersection of artificial intelligence and creative excellence."
       },
       "role": {
-        "fr": "",
-        "en": ""
+        "fr": "Directeur Artistique & Brand Designer",
+        "en": "Art Director & Brand Designer"
       },
       "duration": {
-        "fr": "",
-        "en": ""
+        "fr": "2 mois",
+        "en": "2 months"
       },
-      "year": "2026",
+      "year": "2025",
       "tags": [
-        "course",
-        "uxUI"
+        "Branding",
+        "Design System",
+        "UI Kit",
+        "Identity"
       ],
-      "heroImage": "/images/projects/temp/1773359779069.png",
-      "images": [
-        {
-          "src": "/images/projects/création-de-cours-ux/1773360249533.png",
-          "alt": "",
-          "captionFr": "",
-          "captionEn": ""
-        },
-        {
-          "src": "/images/projects/création-de-cours-ux/1773360254944.png",
-          "alt": "",
-          "captionFr": "",
-          "captionEn": ""
-        },
-        {
-          "src": "/images/projects/création-de-cours-ux/1773360258318.png",
-          "alt": "",
-          "captionFr": "",
-          "captionEn": ""
-        },
-        {
-          "src": "/images/projects/création-de-cours-ux/1773360261350.png",
-          "alt": "",
-          "captionFr": "",
-          "captionEn": ""
-        },
-        {
-          "src": "/images/projects/création-de-cours-ux/1773360266260.png",
-          "alt": "",
-          "captionFr": "",
-          "captionEn": ""
-        }
-      ],
-      "link": "https://www.notion.so/virabo/1-Loi-de-Fitts-pourquoi-la-taille-et-la-distance-d-un-bouton-changent-tout-2bc88876a55680bba630f4f851079491?source=copy_link",
-      "color": "from-cyan-500 to-blue-600",
-      "visible": true,
-      "id": "7"
+      "heroImage": "/images/projects/oxynum/hero.png",
+      "images": [],
+      "color": "from-gray-800 to-gray-950",
+      "visible": true
     }
   ]
 }

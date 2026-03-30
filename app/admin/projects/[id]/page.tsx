@@ -139,21 +139,25 @@ export default function ProjectEditPage() {
         });
 
         const result = await res.json();
+        if (!res.ok) {
+          setMessage({ type: "error", text: result.error || "Erreur lors du téléchargement" });
+          continue;
+        }
         if (result.path) {
           if (type === "hero") {
-            setProject({ ...project, heroImage: result.path });
+            setProject((prev) => ({ ...prev, heroImage: result.path }));
           } else {
-            setProject({
-              ...project,
+            setProject((prev) => ({
+              ...prev,
               images: [
-                ...project.images,
+                ...prev.images,
                 { src: result.path, alt: "", captionFr: "", captionEn: "" },
               ],
-            });
+            }));
           }
         }
-      } catch {
-        setMessage({ type: "error", text: "Erreur lors du téléchargement" });
+      } catch (err) {
+        setMessage({ type: "error", text: `Erreur lors du téléchargement: ${file.name}` });
       }
     }
 

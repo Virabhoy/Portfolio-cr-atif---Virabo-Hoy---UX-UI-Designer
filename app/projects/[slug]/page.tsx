@@ -123,19 +123,45 @@ export default function ProjectPage() {
                 ))}
               </div>
 
-              {/* Project Link */}
-              {project.link && (
-                <Button
-                  size="lg"
-                  className="bg-white text-gray-900 hover:bg-white/90"
-                  asChild
-                >
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    {language === "fr" ? "Voir le site" : "View website"}
-                    <ExternalLink className="w-4 h-4 ml-2" />
-                  </a>
-                </Button>
-              )}
+              {/* Project Links */}
+              <div className="flex flex-wrap gap-3">
+                {project.slug === "mercure" && (
+                  <Button
+                    size="lg"
+                    className="bg-white text-gray-900 hover:bg-white/90"
+                    asChild
+                  >
+                    <Link href="/mercure-bucketlist">
+                      {language === "fr" ? "Voir la démo" : "View demo"}
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                )}
+                {project.slug === "oxynum" && (
+                  <Button
+                    size="lg"
+                    className="bg-white text-gray-900 hover:bg-white/90"
+                    asChild
+                  >
+                    <Link href="/oxynum-charte">
+                      {language === "fr" ? "Voir la démo" : "View demo"}
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                )}
+                {project.link && (
+                  <Button
+                    size="lg"
+                    className={project.slug === "mercure" ? "bg-white/20 text-white hover:bg-white/30 border border-white/30" : "bg-white text-gray-900 hover:bg-white/90"}
+                    asChild
+                  >
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      {language === "fr" ? "Voir le site" : "View website"}
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </a>
+                  </Button>
+                )}
+              </div>
             </div>
 
             {/* Hero Image */}

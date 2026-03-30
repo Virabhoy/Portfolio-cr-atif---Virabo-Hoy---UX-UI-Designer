@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Montserrat } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import PortfolioChrome from "@/components/layout/PortfolioChrome";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage",
   display: "swap",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -38,12 +44,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={bricolage.variable}>
+    <html lang="fr" className={`${bricolage.variable} ${montserrat.variable}`}>
       <body className="font-bricolage antialiased">
         <LanguageProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <PortfolioChrome>{children}</PortfolioChrome>
         </LanguageProvider>
       </body>
     </html>

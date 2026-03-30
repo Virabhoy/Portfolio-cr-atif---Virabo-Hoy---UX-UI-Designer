@@ -3,12 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useLanguage } from "@/lib/language-context";
 import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Header() {
   const { language, toggleLanguage, t } = useLanguage();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -21,11 +24,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const prefix = isHome ? "" : "/";
   const navLinks = [
-    { href: "#about", label: t("nav.about") },
-    { href: "#projects", label: t("nav.projects") },
-    { href: "#skills", label: t("nav.skills") },
-    { href: "#contact", label: t("nav.contact") },
+    { href: `${prefix}#about`, label: t("nav.about") },
+    { href: `${prefix}#projects`, label: t("nav.projects") },
+    { href: "/cours-ux", label: t("nav.courses") },
+    { href: `${prefix}#skills`, label: t("nav.skills") },
+    { href: `${prefix}#contact`, label: t("nav.contact") },
   ];
 
   return (
