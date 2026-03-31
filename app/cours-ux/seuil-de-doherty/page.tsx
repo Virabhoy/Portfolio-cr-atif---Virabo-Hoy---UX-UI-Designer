@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/lib/language-context";
 import { dohertyData } from "@/lib/courses/doherty-data";
+import { affordanceData } from "@/lib/courses/affordance-data";
 import ReadingProgress from "@/components/course/ReadingProgress";
 import CourseHero from "@/components/course/CourseHero";
 import CourseTableOfContents from "@/components/course/CourseTableOfContents";
@@ -272,7 +273,12 @@ export default function DohertyCoursePage() {
 
       <CourseSourcesList sources={course.sources} />
 
-      <CourseNavFooter />
+      <CourseNavFooter
+        nextChapter={{
+          slug: affordanceData.slug,
+          title: affordanceData.title[lang],
+        }}
+      />
     </>
   );
 }

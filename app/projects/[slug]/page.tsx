@@ -149,6 +149,30 @@ export default function ProjectPage() {
                     </Link>
                   </Button>
                 )}
+                {project.slug === "driiink" && (
+                  <>
+                    <Button
+                      size="lg"
+                      className="bg-white text-gray-900 hover:bg-white/90"
+                      asChild
+                    >
+                      <Link href="/driiink-landing">
+                        {language === "fr" ? "Voir la landing" : "View landing"}
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                    <Button
+                      size="lg"
+                      className="bg-white/20 text-white hover:bg-white/30 border border-white/30"
+                      asChild
+                    >
+                      <Link href="/driiink">
+                        {language === "fr" ? "Tester la démo" : "Try demo"}
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  </>
+                )}
                 {project.link && (
                   <Button
                     size="lg"

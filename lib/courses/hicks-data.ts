@@ -12,6 +12,7 @@ export const hicksData: CourseData = {
     en: "Mastering the paradox of choice in UX Design",
   },
   readingTime: 14,
+  category: "ux",
   description: {
     fr: "Comprendre pourquoi trop de choix paralyse l'utilisateur et comment concevoir des interfaces qui guident la décision.",
     en: "Understanding why too many choices paralyze users and how to design interfaces that guide decisions.",

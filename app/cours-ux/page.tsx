@@ -7,8 +7,34 @@ import { hicksData } from "@/lib/courses/hicks-data";
 import { jakobData } from "@/lib/courses/jakob-data";
 import { zeigarnikData } from "@/lib/courses/zeigarnik-data";
 import { dohertyData } from "@/lib/courses/doherty-data";
+import { affordanceData } from "@/lib/courses/affordance-data";
+import { wcagData } from "@/lib/courses/wcag-data";
+import { uxIaData } from "@/lib/courses/ux-ia-data";
+import { thumbZoneData } from "@/lib/courses/thumb-zone-data";
+import { oneHandData } from "@/lib/courses/one-hand-data";
+import { feedbackData } from "@/lib/courses/feedback-data";
+import { cognitiveLoadData } from "@/lib/courses/cognitive-load-data";
+import { emotionalDesignData } from "@/lib/courses/emotional-design-data";
+import { darkPatternsData } from "@/lib/courses/dark-patterns-data";
+import { designSystemsData } from "@/lib/courses/design-systems-data";
 
-const courses = [fittsData, hicksData, jakobData, zeigarnikData, dohertyData];
+const courses = [
+  fittsData,
+  hicksData,
+  jakobData,
+  zeigarnikData,
+  dohertyData,
+  affordanceData,
+  wcagData,
+  uxIaData,
+  thumbZoneData,
+  oneHandData,
+  feedbackData,
+  cognitiveLoadData,
+  emotionalDesignData,
+  darkPatternsData,
+  designSystemsData,
+];
 
 export default function CoursUxPage() {
   const { language, t } = useLanguage();

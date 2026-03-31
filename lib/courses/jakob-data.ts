@@ -12,6 +12,7 @@ export const jakobData: CourseData = {
     en: "Navigating between Jakob's Law and Disruptive Design",
   },
   readingTime: 15,
+  category: "ux",
   description: {
     fr: "Comprendre pourquoi les utilisateurs préfèrent les interfaces familières et comment innover sans les perdre.",
     en: "Understanding why users prefer familiar interfaces and how to innovate without losing them.",

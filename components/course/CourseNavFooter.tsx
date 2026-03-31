@@ -8,9 +8,10 @@ interface CourseNavFooterProps {
     slug: string;
     title: string;
   };
+  basePath?: string;
 }
 
-export default function CourseNavFooter({ nextChapter }: CourseNavFooterProps) {
+export default function CourseNavFooter({ nextChapter, basePath = "/cours-ux" }: CourseNavFooterProps) {
   const { t } = useLanguage();
 
   return (
@@ -18,7 +19,7 @@ export default function CourseNavFooter({ nextChapter }: CourseNavFooterProps) {
       <div className="container-custom max-w-4xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link
-            href="/cours-ux"
+            href={basePath}
             className="font-montserrat text-[var(--muted-foreground)] hover:text-[var(--primary)] transition-colors flex items-center gap-2"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -34,7 +35,7 @@ export default function CourseNavFooter({ nextChapter }: CourseNavFooterProps) {
           </Link>
           {nextChapter ? (
             <Link
-              href={`/cours-ux/${nextChapter.slug}`}
+              href={`${basePath}/${nextChapter.slug}`}
               className="font-montserrat text-sm font-medium text-[var(--primary)] bg-[var(--muted)] px-4 py-2 rounded-full hover:bg-[var(--primary)] hover:text-white transition-colors flex items-center gap-2"
             >
               {t("course.nextChapter")} — {nextChapter.title}

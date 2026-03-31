@@ -46,6 +46,13 @@ next-env.d.ts
 # Claude
 .claude/
 
+# Rosa Deorum (local only)
+RosaDeorum/
+app/rosa-deorum/
+components/rosa-deorum/
+lib/rosa-deorum/
+public/rosa-deorum/
+
 # Playwright
 /test-results/
 /playwright-report/

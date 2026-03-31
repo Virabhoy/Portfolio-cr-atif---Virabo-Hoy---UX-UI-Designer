@@ -107,7 +107,7 @@ const translations = {
     "footer.made": "Conçu avec",
 
     // Courses
-    "nav.courses": "Cours UX",
+    "nav.courses": "Cours",
     "course.backToCourses": "Retour aux cours",
     "course.tableOfContents": "Sommaire",
     "course.sources": "Sources & Références",
@@ -118,11 +118,19 @@ const translations = {
     "course.listing.title": "Cours UX",
     "course.listing.subtitle": "Apprendre les principes scientifiques du design d'interface",
     "course.listing.description": "Des cours approfondis sur les lois fondamentales de l'UX, basés sur la recherche scientifique et illustrés par des exemples concrets.",
+    "course.category.all": "Tous",
+    "course.category.ux": "UX Design",
+    "course.category.ia": "Intelligence Artificielle",
+    "course.courses": "cours",
 
-    // Cours UX homepage section
-    "coursux.section.title": "Cours UX",
-    "coursux.section.subtitle": "Des cours approfondis sur les grandes lois de l'UX, basés sur la recherche scientifique.",
+    // Cours homepage section
+    "coursux.section.title": "Cours",
+    "coursux.section.subtitle": "UX Design & Intelligence Artificielle : des cours experts pour maîtriser les compétences de demain.",
     "coursux.section.cta": "Voir tous les cours",
+    "coursux.section.ux.label": "UX Design",
+    "coursux.section.ux.desc": "Les lois fondamentales du design d'interface",
+    "coursux.section.ia.label": "Intelligence Artificielle",
+    "coursux.section.ia.desc": "Maîtriser les outils et techniques de l'IA",
   },
   en: {
     // Navigation
@@ -220,7 +228,7 @@ const translations = {
     "footer.made": "Designed with",
 
     // Courses
-    "nav.courses": "UX Courses",
+    "nav.courses": "Courses",
     "course.backToCourses": "Back to courses",
     "course.tableOfContents": "Table of Contents",
     "course.sources": "Sources & References",
@@ -231,11 +239,19 @@ const translations = {
     "course.listing.title": "UX Courses",
     "course.listing.subtitle": "Learn the scientific principles of interface design",
     "course.listing.description": "In-depth courses on the fundamental laws of UX, based on scientific research and illustrated with concrete examples.",
+    "course.category.all": "All",
+    "course.category.ux": "UX Design",
+    "course.category.ia": "Artificial Intelligence",
+    "course.courses": "courses",
 
-    // Cours UX homepage section
-    "coursux.section.title": "UX Courses",
-    "coursux.section.subtitle": "In-depth courses on the fundamental laws of UX, grounded in scientific research.",
+    // Courses homepage section
+    "coursux.section.title": "Courses",
+    "coursux.section.subtitle": "UX Design & Artificial Intelligence: expert courses to master tomorrow's skills.",
     "coursux.section.cta": "See all courses",
+    "coursux.section.ux.label": "UX Design",
+    "coursux.section.ux.desc": "The fundamental laws of interface design",
+    "coursux.section.ia.label": "Artificial Intelligence",
+    "coursux.section.ia.desc": "Master AI tools and techniques",
   },
 };
 

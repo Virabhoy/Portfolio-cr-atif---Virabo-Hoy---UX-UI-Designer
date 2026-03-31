@@ -18,6 +18,7 @@ export interface CourseData {
   title: { fr: string; en: string };
   subtitle: { fr: string; en: string };
   readingTime: number;
+  category: string;
   description: { fr: string; en: string };
   sections: CourseSection[];
   sources: CourseSource[];
@@ -35,6 +36,7 @@ export const fittsData: CourseData = {
     en: "From cockpit ergonomics to mobile UX design",
   },
   readingTime: 12,
+  category: "ux",
   description: {
     fr: "Comprendre et appliquer la Loi de Fitts pour concevoir des interfaces plus ergonomiques et intuitives.",
     en: "Understanding and applying Fitts' Law to design more ergonomic and intuitive interfaces.",

@@ -12,6 +12,7 @@ export const zeigarnikData: CourseData = {
     en: "Why your brain hates incomplete tasks — and how design exploits it",
   },
   readingTime: 14,
+  category: "ux",
   description: {
     fr: "Comprendre l'Effet Zeigarnik pour concevoir des interfaces qui motivent sans manipuler.",
     en: "Understanding the Zeigarnik Effect to design interfaces that motivate without manipulating.",

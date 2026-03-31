@@ -12,7 +12,9 @@ export default function PortfolioChrome({
   const pathname = usePathname();
   const isStandalone =
     pathname.startsWith("/mercure-bucketlist") ||
-    pathname.startsWith("/oxynum-charte");
+    pathname.startsWith("/oxynum-charte") ||
+    pathname.startsWith("/driiink") ||
+    pathname.startsWith("/rosa-deorum");
 
   if (isStandalone) {
     return <>{children}</>;

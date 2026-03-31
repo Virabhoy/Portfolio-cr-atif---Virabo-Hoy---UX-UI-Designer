@@ -28,7 +28,7 @@ export default function Header() {
   const navLinks = [
     { href: `${prefix}#about`, label: t("nav.about") },
     { href: `${prefix}#projects`, label: t("nav.projects") },
-    { href: "/cours-ux", label: t("nav.courses") },
+    { href: `${prefix}#cours`, label: t("nav.courses") },
     { href: `${prefix}#skills`, label: t("nav.skills") },
     { href: `${prefix}#contact`, label: t("nav.contact") },
   ];

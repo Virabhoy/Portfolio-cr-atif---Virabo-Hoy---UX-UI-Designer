@@ -12,6 +12,7 @@ export const dohertyData: CourseData = {
     en: "The neurobiology of perceived speed and the illusion of real time",
   },
   readingTime: 14,
+  category: "ux",
   description: {
     fr: "Comprendre le seuil des 400ms, les mécanismes cérébraux de la latence et les techniques pour concevoir des interfaces qui semblent instantanées.",
     en: "Understanding the 400ms threshold, brain mechanisms of latency, and techniques to design interfaces that feel instantaneous.",
