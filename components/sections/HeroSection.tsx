@@ -15,7 +15,7 @@ export default function HeroSection() {
     gravityActive ? { x: 0, y: 1 } : { x: 0, y: 0 }
   ), [gravityActive]);
 
-  const badges = [
+  const badges: { key: string; color: string; x: string; y: string; angle?: number }[] = [
     // Single row just above "VIRABO HOY" — evenly spaced, y=25%
     { key: "hero.badge.ux", color: "bg-primary", x: "10%", y: "25%" },
     { key: "hero.badge.product", color: "bg-[#E794DA]", x: "27%", y: "25%" },
