@@ -8,11 +8,11 @@ interface PhoneFrameProps {
 
 export default function PhoneFrame({ children }: PhoneFrameProps) {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-0 md:p-8">
+    <>
       {/* Desktop: phone frame */}
-      <div className="hidden md:block relative">
+      <div className="hidden md:flex min-h-screen bg-black items-center justify-center p-8">
         <div
-          className="relative w-[390px] h-[844px] rounded-[3rem] border-[3px] border-zinc-700/80 bg-[#0A0A0A] overflow-hidden shadow-2xl shadow-black/50"
+          className="relative w-[390px] h-[844px] rounded-[3rem] border-[3px] border-zinc-700/80 bg-[#0A0A0A] overflow-hidden shadow-2xl"
           style={{ boxShadow: "0 0 80px rgba(34,197,94,0.05), 0 25px 50px rgba(0,0,0,0.5)" }}
         >
           {/* Dynamic Island */}
@@ -31,9 +31,9 @@ export default function PhoneFrame({ children }: PhoneFrameProps) {
       </div>
 
       {/* Mobile: full screen, no frame */}
-      <div className="md:hidden w-full min-h-screen bg-[#0A0A0A]">
+      <div className="md:hidden w-full h-screen bg-[#0A0A0A] overflow-hidden">
         {children}
       </div>
-    </div>
+    </>
   );
 }

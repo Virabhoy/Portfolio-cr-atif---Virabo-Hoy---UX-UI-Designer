@@ -1,4 +1,4 @@
-export type Screen = "home" | "detail" | "order" | "payment";
+export type Screen = "home" | "detail" | "order" | "payment" | "table" | "settings";
 
 export interface Ingredient {
   name: string;

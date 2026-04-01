@@ -8,6 +8,8 @@ const screenIndex: Record<Screen, number> = {
   detail: 1,
   order: 2,
   payment: 3,
+  table: 4,
+  settings: 5,
 };
 
 const initialState: DriiinkState = {

@@ -14,7 +14,8 @@ export default function PortfolioChrome({
     pathname.startsWith("/mercure-bucketlist") ||
     pathname.startsWith("/oxynum-charte") ||
     pathname.startsWith("/driiink") ||
-    pathname.startsWith("/rosa-deorum");
+    pathname.startsWith("/rosa-deorum") ||
+    pathname.startsWith("/cocoon");
 
   if (isStandalone) {
     return <>{children}</>;

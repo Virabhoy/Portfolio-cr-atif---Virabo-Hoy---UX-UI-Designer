@@ -8,7 +8,11 @@ import HomeScreen from "./screens/HomeScreen";
 import DetailScreen from "./screens/DetailScreen";
 import OrderScreen from "./screens/OrderScreen";
 import PaymentScreen from "./screens/PaymentScreen";
+import TableScreen from "./screens/TableScreen";
+import SettingsScreen from "./screens/SettingsScreen";
 import { AnimatePresence, motion } from "motion/react";
+
+const screensWithNav = new Set(["home", "order", "table", "settings"]);
 
 function ScreenRouter() {
   const { state } = useDriiink();
@@ -18,10 +22,12 @@ function ScreenRouter() {
     detail: <DetailScreen />,
     order: <OrderScreen />,
     payment: <PaymentScreen />,
+    table: <TableScreen />,
+    settings: <SettingsScreen />,
   };
 
   return (
-    <div className="relative h-full w-full overflow-hidden bg-[#0A0A0A]">
+    <div className="relative h-full w-full overflow-hidden bg-[#FAFAFA]">
       <AnimatePresence mode="wait">
         <motion.div
           key={state.screen}
@@ -35,7 +41,7 @@ function ScreenRouter() {
         </motion.div>
       </AnimatePresence>
 
-      {(state.screen === "home" || state.screen === "order") && <BottomNav />}
+      {screensWithNav.has(state.screen) && <BottomNav />}
     </div>
   );
 }
