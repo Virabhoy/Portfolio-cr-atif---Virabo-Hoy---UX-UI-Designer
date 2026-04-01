@@ -23,6 +23,7 @@
   --color-border: #E5E5E5;
   --font-family-bricolage: var(--font-bricolage), sans-serif;
   --font-family-montserrat: var(--font-montserrat), sans-serif;
+  --font-family-dynapuff: var(--font-dynapuff), cursive;
 }
 
 html {

@@ -505,6 +505,14 @@ const Gravity = forwardRef<GravityRef, GravityProps>(
       handleResize();
     }, [stopEngine, canvasSize, updateElements, handleResize]);
 
+    // Reactively update gravity when prop changes
+    useEffect(() => {
+      if (engine.current) {
+        engine.current.gravity.x = gravity.x;
+        engine.current.gravity.y = gravity.y;
+      }
+    }, [gravity.x, gravity.y]);
+
     useImperativeHandle(
       ref,
       () => ({

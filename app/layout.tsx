@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Montserrat } from "next/font/google";
+import { Bricolage_Grotesque, Montserrat, DynaPuff, Grandstander } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
 import PortfolioChrome from "@/components/layout/PortfolioChrome";
@@ -8,6 +8,20 @@ const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
   variable: "--font-bricolage",
   display: "swap",
+});
+
+const dynaPuff = DynaPuff({
+  subsets: ["latin"],
+  variable: "--font-dynapuff",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+});
+
+const grandstander = Grandstander({
+  subsets: ["latin"],
+  variable: "--font-grandstander",
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const montserrat = Montserrat({
@@ -44,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${bricolage.variable} ${montserrat.variable}`}>
+    <html lang="fr" className={`${bricolage.variable} ${montserrat.variable} ${dynaPuff.variable} ${grandstander.variable}`}>
       <body className="font-bricolage antialiased">
         <LanguageProvider>
           <PortfolioChrome>{children}</PortfolioChrome>

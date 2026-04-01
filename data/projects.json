@@ -405,6 +405,65 @@
       "images": [],
       "color": "from-gray-800 to-gray-950",
       "visible": true
+    },
+    {
+      "id": "8",
+      "slug": "cocoon",
+      "title": {
+        "fr": "Cocoon",
+        "en": "Cocoon"
+      },
+      "client": {
+        "fr": "Projet Personnel — Application Immobilière",
+        "en": "Personal Project — Real Estate App"
+      },
+      "description": {
+        "fr": "Application mobile-first de gestion locative tout-en-un : quittances, baux, messagerie, SEPA et suivi des travaux pour propriétaires et locataires.",
+        "en": "Mobile-first all-in-one rental management app: receipts, leases, messaging, SEPA payments and works tracking for landlords and tenants."
+      },
+      "longDescription": {
+        "fr": "Cocoon est une solution innovante conçue pour simplifier la gestion locative des particuliers. L'application centralise quittances de loyer, baux numériques, messagerie propriétaire-locataire, prélèvements SEPA, suivi des dépenses, états des lieux et gestion des travaux dans une interface mobile-first intuitive. Le projet inclut une landing page commerciale, une application interactive de démonstration et une étude UX approfondie avec analyse de marché, benchmark concurrentiel et roadmap stratégique.",
+        "en": "Cocoon is an innovative solution designed to simplify rental management for individuals. The app centralizes rent receipts, digital leases, landlord-tenant messaging, SEPA payments, expense tracking, property inspections and works management in an intuitive mobile-first interface. The project includes a commercial landing page, an interactive demo application and an in-depth UX study with market analysis, competitive benchmark and strategic roadmap."
+      },
+      "role": {
+        "fr": "UX/UI Designer & Product Designer",
+        "en": "UX/UI Designer & Product Designer"
+      },
+      "duration": {
+        "fr": "4 mois",
+        "en": "4 months"
+      },
+      "year": "2023",
+      "tags": [
+        "UX/UI",
+        "Product Design",
+        "Mobile App",
+        "Immobilier",
+        "Étude de marché"
+      ],
+      "heroImage": "/images/projects/cocoon/hero-card.png",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=500&fit=crop",
+          "alt": "Cocoon App Interface",
+          "captionFr": "Interface de l'application Cocoon — Gestion locative simplifiée",
+          "captionEn": "Cocoon app interface — Simplified rental management"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop",
+          "alt": "Cocoon Landing Page",
+          "captionFr": "Landing page Cocoon — Section hero avec statistiques clés",
+          "captionEn": "Cocoon landing page — Hero section with key statistics"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop",
+          "alt": "Cocoon Property Management",
+          "captionFr": "Gestion des biens — Dashboard financier et suivi des loyers",
+          "captionEn": "Property management — Financial dashboard and rent tracking"
+        }
+      ],
+      "color": "from-rose-500 to-red-600",
+      "visible": true
     }
   ]
 }
