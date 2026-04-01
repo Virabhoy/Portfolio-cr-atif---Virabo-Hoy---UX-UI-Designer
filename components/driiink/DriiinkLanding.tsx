@@ -95,7 +95,7 @@ export default function DriiinkLanding() {
       >
         <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
           <Link href="/driiink-landing" className="flex items-center gap-2.5">
-            <Image src="/images/projects/driiink/logo-dark.png" alt="Driiink" width={32} height={32} className="rounded-lg" />
+            <Image src="/images/projects/Driiink/logo-dark.png" alt="Driiink" width={32} height={32} className="rounded-lg" />
             <span className="font-bold text-lg font-bricolage">Driiink</span>
           </Link>
           <nav className="hidden md:flex gap-6">
@@ -203,7 +203,7 @@ export default function DriiinkLanding() {
               </motion.div>
               {/* Mobile: logo */}
               <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="lg:hidden flex justify-center">
-                <Image src="/images/projects/driiink/logo-dark.png" alt="Driiink" width={200} height={200} className="drop-shadow-2xl" priority />
+                <Image src="/images/projects/Driiink/logo-dark.png" alt="Driiink" width={200} height={200} className="drop-shadow-2xl" priority />
               </motion.div>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function DriiinkLanding() {
                   </div>
                 </div>
                 <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }}>
-                  <Image src="/images/projects/driiink/screens.png" alt="Screens" width={600} height={400} className="w-full rounded-2xl shadow-lg" />
+                  <Image src="/images/projects/Driiink/screens.png" alt="Screens" width={600} height={400} className="w-full rounded-2xl shadow-lg" />
                 </motion.div>
               </div>
             </div>
@@ -468,7 +468,7 @@ export default function DriiinkLanding() {
       <footer className="w-full border-t border-zinc-100">
         <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-4 py-8 px-6 md:flex-row">
           <div className="flex items-center gap-2">
-            <Image src="/images/projects/driiink/logo-dark.png" alt="Driiink" width={20} height={20} className="rounded" />
+            <Image src="/images/projects/Driiink/logo-dark.png" alt="Driiink" width={20} height={20} className="rounded" />
             <span className="font-bold font-bricolage text-sm">Driiink</span>
           </div>
           <p className="text-xs text-zinc-400">

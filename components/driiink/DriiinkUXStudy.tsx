@@ -91,7 +91,7 @@ export default function DriiinkUXStudy() {
             <span className="text-sm">Retour</span>
           </Link>
           <div className="flex items-center gap-2">
-            <Image src="/images/projects/driiink/logo.png" alt="Driiink" width={24} height={24} className="rounded" />
+            <Image src="/images/projects/Driiink/logo.png" alt="Driiink" width={24} height={24} className="rounded" />
             <span className="font-bold text-sm font-bricolage">Driiink — Étude UX</span>
           </div>
           <Button size="sm" variant="outline" className="rounded-full text-xs hidden md:flex" onClick={() => setTocOpen(!tocOpen)}>
@@ -523,10 +523,10 @@ export default function DriiinkUXStudy() {
         <SectionTitle badge="11 — Maquettes" title="Maquettes haute fidélité" subtitle="Les écrans finaux de l'application." />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { src: "/images/projects/driiink/app.png", title: "Accueil" },
-            { src: "/images/projects/driiink/detail.png", title: "Détail cocktail" },
-            { src: "/images/projects/driiink/Product page detail.png", title: "Page produit" },
-            { src: "/images/projects/driiink/Récapitulatif de la table.png", title: "Récapitulatif" },
+            { src: "/images/projects/Driiink/app.png", title: "Accueil" },
+            { src: "/images/projects/Driiink/detail.png", title: "Détail cocktail" },
+            { src: "/images/projects/Driiink/Product page detail.png", title: "Page produit" },
+            { src: "/images/projects/Driiink/Récapitulatif de la table.png", title: "Récapitulatif" },
           ].map((s, i) => (
             <div key={i} className="space-y-2">
               <div className="relative aspect-[9/16] rounded-2xl overflow-hidden border border-zinc-200 shadow-sm">
