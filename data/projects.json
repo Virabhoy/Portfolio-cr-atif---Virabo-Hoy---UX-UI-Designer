@@ -464,6 +464,46 @@
       ],
       "color": "from-rose-500 to-red-600",
       "visible": true
+    },
+    {
+      "id": "9",
+      "slug": "teemo",
+      "title": {
+        "fr": "Teemo",
+        "en": "Teemo"
+      },
+      "client": {
+        "fr": "Outil interne — Gestion de CRA",
+        "en": "Internal Tool — CRA Management"
+      },
+      "description": {
+        "fr": "Application de gestion de CRA pour Product Owners : envoi rapide de comptes rendus d'activité, visibilité projet et pilotage des coûts d'équipe.",
+        "en": "CRA management app for Product Owners: fast activity report submission, project visibility and team cost tracking."
+      },
+      "longDescription": {
+        "fr": "Teemo est une application orientée business conçue pour les Product Owners. Elle permet d'envoyer des CRA rapidement, d'avoir une visibilité complète sur les projets en cours, de piloter les coûts et de gérer les activités de son équipe en temps réel.",
+        "en": "Teemo is a business-oriented application designed for Product Owners. It enables fast CRA submission, full visibility on ongoing projects, cost management and real-time team activity tracking."
+      },
+      "role": {
+        "fr": "UX/UI Designer & Développeur Front-end",
+        "en": "UX/UI Designer & Front-end Developer"
+      },
+      "duration": {
+        "fr": "3 mois",
+        "en": "3 months"
+      },
+      "year": "2026",
+      "tags": [
+        "UX/UI",
+        "Product Design",
+        "Web App",
+        "Business Tool"
+      ],
+      "heroImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop",
+      "images": [],
+      "color": "from-violet-600 to-purple-800",
+      "visible": true,
+      "link": "https://teemo-cra-manager.vercel.app/"
     }
   ]
 }
